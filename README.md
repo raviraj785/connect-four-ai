@@ -6,7 +6,7 @@ The AI uses the **Minimax algorithm with Alpha-Beta Pruning** to analyze possibl
 
 ## 🌐 Live Demo
 
-🔗 **[Play Connect Four AI](YOUR_GITHUB_PAGES_LINK)**
+🔗 **[Play Connect Four AI](https://raviraj785.github.io/connect-four-ai/)**
 
 ---
 
