@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Connect Four game with an AI opponent built using HTML, CSS and JavaScript."
+    >
+
+    <title>Connect Four AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <!-- Header -->
+        <header class="game-header">
+            <p class="game-label">AI GAME</p>
+
+            <h1>Connect Four</h1>
+
+            <p class="subtitle">
+                Challenge the AI and connect four pieces to win.
+            </p>
+        </header>
+
+
+        <!-- Game Controls -->
+        <section class="controls">
+
+            <div class="control-group">
+
+                <label for="difficulty">
+                    Difficulty
+                </label>
+
+                <select id="difficulty">
+
+                    <option value="2">
+                        Easy
+                    </option>
+
+                    <option value="4" selected>
+                        Medium
+                    </option>
+
+                    <option value="5">
+                        Hard
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- Score Board -->
+        <section class="score-board">
+
+            <div class="score-card player-card">
+
+                <div class="score-icon player-icon"></div>
+
+                <div>
+                    <span class="score-label">
+                        You
+                    </span>
+
+                    <strong id="playerScore">
+                        0
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="score-card ai-card">
+
+                <div class="score-icon ai-icon"></div>
+
+                <div>
+                    <span class="score-label">
+                        AI
+                    </span>
+
+                    <strong id="aiScore">
+                        0
+                    </strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Status -->
+        <div
+            id="status"
+            class="status"
+            aria-live="polite"
+        >
+            Your Turn
+        </div>
+
+
+        <!-- Board -->
+        <section
+            id="board"
+            class="board"
+            aria-label="Connect Four board"
+        >
+        </section>
+
+
+        <!-- Buttons -->
+        <div class="buttons">
+
+            <button
+                id="newGameBtn"
+                class="primary-btn"
+            >
+                New Game
+            </button>
+
+            <button
+                id="resetScoreBtn"
+                class="secondary-btn"
+            >
+                Reset Score
+            </button>
+
+        </div>
+
+
+        <!-- Instructions -->
+        <div class="instructions">
+
+            <p>
+                <span>●</span>
+                You are red
+            </p>
+
+            <p>
+                <span>●</span>
+                AI is yellow
+            </p>
+
+            <p>
+                Connect four horizontally, vertically or diagonally.
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
